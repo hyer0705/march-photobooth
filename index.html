@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div 
+                id="img1" 
+                class="photo-frame"
+                onmouseover="showText(1)"
+                onmouseout="hideText(1)"
+                onclick="alertText(1)"
+                >
+                <img src="./images/europe1.jpg" alt="런던아이">
+                <span id="desc1" class="photo-desc">런던아이 야경 본 날</span>
+            </div>
+            <div 
+                id="img2" 
+                class="photo-frame"
+                onmouseover="showText(2)"
+                onmouseout="hideText(2)"
+                onclick="alertText(2)"
+            >
+                <img src="./images/europe2.jpg" alt="겔레르트언덕">
+                <span id="desc2" class="photo-desc">겔레르트 언덕에서</span>
+            </div>
+            <div 
+                id="img3" 
+                class="photo-frame"
+                onmouseover="showText(3)"
+                onmouseout="hideText(3)"
+                onclick="alertText(3)"
+                >
+                <img src="./images/europe3.jpg" alt="부라노">
+                <span id="desc3" class="photo-desc">부라노섬에서</span>
+            </div>
+            <div class="photo-frame">
+                <iframe class="video" src="https://www.youtube.com/embed/TWz1btekxfs" frameborder="0" class="video"></iframe>
+            </div>
+        </div>
+        <div class="photo-footer">
+            <p class="f-title">유럽 여행</p>
+            <p class="f-date">2023. 03. 04(SAT)</p>
+        </div>
+    </div>
+</body>
+</html>

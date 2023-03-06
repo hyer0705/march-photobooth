@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'KCC-Ganpan';
+    margin: 0;
+    display: flex;
+    background-image: url('../images/background.png');
+    justify-content: center;
+}
+.container {
+    background-color: tomato;
+    width: 390px;
+    height: 100%;
+}
+.photos {
+    margin-top: 30px;
+}
+.photo-frame {
+    background-color: #fff;
+    margin: 15px 20px;
+    height: 200px;
+
+    background-size: cover;
+
+    position: relative;
+    cursor: pointer;
+}
+.photo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.f-title {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+.f-date {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo-desc {
+    color: #fff;
+    background-color: #000;
+    width: fit-content;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%);
+    left: 50%;
+    opacity: 0;
+}
+.video {
+    width: 100%;
+    height: 100%;
+}
+.showText {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+.hideText {
+    opacity: 0;
+}
